@@ -1,6 +1,6 @@
 # Post-and-Comments
-There are 2 urls, 1 is for POST and other is for Comments.
-In POST there are 10 users each user posts 10 different posts and for each post there are 5 different comments each.
-All POST and Comments are merged, transposed and store in JSON file, all 5 comments are under each respective POST.
 
-This code used in Lambda function
+- Using python and pandas (primarily) downloaded data from supplied URLs for posts and comments. 
+- Merge them together to created a better structure where each blog has it's own comments in the same section 
+- Implemented this code as a serverless AWS lambda function which does the work and upload the final JSON to an S3 bucket
+- Created an AWS API endpoint to be used to trigger the lambda function.
